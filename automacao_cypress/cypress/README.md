@@ -31,3 +31,8 @@ npm install cypress-file-upload --save-dev
 para rodar o projeto
 npx cypress run --browser chrome --no-exit
 npm run test:chrome
+
+
+#bdd_api
+
+foi inserido os teste com postman e teste funcional na pasta bdd_api
