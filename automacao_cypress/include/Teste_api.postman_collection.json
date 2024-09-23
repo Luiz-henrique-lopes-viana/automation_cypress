@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "0beef6a5-5393-4d90-9247-851d81a31163",
+		"name": "Teste_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22589114"
+	},
+	"item": [
+		{
+			"name": "encontrar_produto",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Teste para verificar o status code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.advantageonlineshopping.com/catalog/api/v1/products/13",
+					"protocol": "https",
+					"host": [
+						"www",
+						"advantageonlineshopping",
+						"com"
+					],
+					"path": [
+						"catalog",
+						"api",
+						"v1",
+						"products",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alteração_de_imagem",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cuYWR2YW50YWdlb25saW5lc2hvcHBpbmcuY29tIiwidXNlcklkIjo3MjM5NjQxMjcsInN1YiI6Imx1aGVuIiwicm9sZSI6IlVTRVIifQ.exNGyJUJOTmhhHg11VUbntFwBNNfwNXkp3PF-RKjC90",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/48903152840/Pictures/8276b5f9f0cb3e2ccdfc5284dcf8bbb5.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.advantageonlineshopping.com/catalog/api/v1/product/image/723964127/luhenImg/ffffff?product_id=13",
+					"protocol": "https",
+					"host": [
+						"www",
+						"advantageonlineshopping",
+						"com"
+					],
+					"path": [
+						"catalog",
+						"api",
+						"v1",
+						"product",
+						"image",
+						"723964127",
+						"luhenImg",
+						"ffffff"
+					],
+					"query": [
+						{
+							"key": "product_id",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

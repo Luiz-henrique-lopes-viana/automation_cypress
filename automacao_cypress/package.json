@@ -1,0 +1,23 @@
+{
+  "name": "cypress-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "Luiz Lopes",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.14.2",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDeFinitions": true,
+    "stepDefinitions": "cypress/e2e/step_definitions/test"
+  },
+  "dependencies": {
+    "cypress-file-upload": "^5.0.8"
+  }
+}

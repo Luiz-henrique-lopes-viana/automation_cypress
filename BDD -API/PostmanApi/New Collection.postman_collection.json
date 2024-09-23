@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "93fe3f2d-93c9-423c-be67-5a0dd1ec5f26",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22589114"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Teste para verificar o status code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.advantageonlineshopping.com/catalog/api/v1/products/13",
+					"protocol": "https",
+					"host": [
+						"www",
+						"advantageonlineshopping",
+						"com"
+					],
+					"path": [
+						"catalog",
+						"api",
+						"v1",
+						"products",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alteração de imagem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
