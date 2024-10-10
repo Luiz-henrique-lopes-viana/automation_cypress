@@ -31,6 +31,7 @@ npm install cypress-file-upload --save-dev
 para rodar o projeto
 npx cypress run --browser chrome --no-exit
 npm run test:chrome
+npm install -D cypress-xpath
 
 
 #bdd_api
