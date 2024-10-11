@@ -5,8 +5,10 @@ Given("Crio uma conta", () => {
     cy.get('#menuUserLink').click();
     cy.get('.create-new-account').click();
     //ALTERAR O NOME CASO CRIAR NOVA CONTA PARA RODAR O TESTE//
-    cy.get(':nth-child(2) > [a-hint="Username"] > .inputContainer > label').type('luizloppeEss');
-    cy.get('[sec-name="userEmail"] > .inputContainer > label').type('luizZ@teste.com');
+    cy.get(':nth-child(2) > [a-hint="Username"] > .inputContainer > label').type('LuizLopestesteqa');
+
+    ///^^ ALTERAR A CIMA ^^///
+    cy.get('[sec-name="userEmail"] > .inputContainer > label').type('luizZz@teste.com');
     cy.get(':nth-child(3) > [a-hint="Password"] > .inputContainer > label').type('*Teste123456');
     cy.get('[a-hint="Confirm password"] > .inputContainer > label').type('*Teste123456');
     cy.get('[sec-name="userFirstName"] > .inputContainer > label').type('Luiz Henrique');

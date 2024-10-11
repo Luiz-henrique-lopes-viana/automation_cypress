@@ -3,7 +3,7 @@ import { Given, When, Then, } from 'cypress-cucumber-preprocessor/steps'
 Given("Login e acesso ao carrinho", () => {
           cy.visit('https://advantageonlineshopping.com')
           cy.get('#menuUserLink').click();
-          cy.get('[a-hint="Username"] > .inputContainer > .ng-pristine').type('luizloppeEss');
+          cy.get('[a-hint="Username"] > .inputContainer > .ng-pristine').type('LuizLopestesteqa');
           cy.get('[a-hint="Password"] > .inputContainer > .ng-pristine').type('*Teste123456');
           cy.get('#sign_in_btn').click();
           cy.get('#mobileSearch > .roboto-medium').type('tablet');
